@@ -1,4 +1,5 @@
 @import './mixins';
+@import './variables';
 
 .home {
   @include AutoLayoutRow(150px 0, 150px);
@@ -10,7 +11,7 @@
 }
 
 .home__content {
-  @include AutoLayoutColumn(0, 0);
+  @include AutoLayoutColumn(0, 20px);
 }
 
 .home__info {
@@ -25,7 +26,6 @@
     font-size: 50px;
     line-height: 97px;
     text-align: center;
-    color: #FFFFFF;
 }
 
 .home-info__list {
@@ -36,10 +36,31 @@
     font-weight: 800;
     font-size: 25px;
     line-height: 44px;
-    color: #FFFFFF;
   }
 }
 
 .home__btns {
   @include AutoLayoutRow(0, 72px);
 }
+
+.button {
+  @include AutoLayoutRow(7px,15px);
+  width: 175px;
+  height: 50px;
+  background: $black07-color;
+  box-shadow: 8px 8px 3px $box-shadow-color;
+  border-radius: 15px;
+  cursor: pointer;
+  &:hover {
+    @include HoverActive();
+  }
+}
+
+.button__text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 20px;
+  line-height: 29px;
+}
+

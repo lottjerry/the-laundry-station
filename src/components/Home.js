@@ -1,4 +1,6 @@
 import logo from "../assets/img/logo.png"
+import Button from "./Button"
+import telegram from "../assets/img/telegram-alt.svg"
 
 export default function Home() {
   return (
@@ -18,6 +20,7 @@ export default function Home() {
           </ul>
         </div>
         <div className="home__btns">
+          <Button text="Contact Us" src={telegram} alt="Telegram Icon"/>
         </div>
       </div>
     </section>

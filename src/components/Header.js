@@ -5,7 +5,7 @@ export default function Header() {
         <a href="#" className="nav__title">The Laundry Station</a>
         <ul className="nav__list">
           <li>
-            <a href="#home" className="nav__item">Home</a>
+            <a href="#home" className="nav__item active-item">Home</a>
           </li>
           <li>
             <a href="#about" className="nav__item">About</a>
