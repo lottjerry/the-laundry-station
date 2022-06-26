@@ -1,7 +1,7 @@
 @import './mixins';
 
 .nav {
-  @include AutoLayoutRow(5px 0, 350px);
+  @include AutoLayoutRow(5px 0, 275px);
   position: fixed;
   top: 0;
   width: 100%;

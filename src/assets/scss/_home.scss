@@ -1,0 +1,45 @@
+@import './mixins';
+
+.home {
+  @include AutoLayoutRow(150px 0, 150px);
+}
+
+.home__logo {
+  width: 300px;
+  border-radius: 232.225px;
+}
+
+.home__content {
+  @include AutoLayoutColumn(0, 0);
+}
+
+.home__info {
+  @include AutoLayoutColumn(0, 5px);
+  align-items: center;
+}
+
+.home-info__title {
+  font-family: 'Brush Script MT';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 97px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.home-info__list {
+  @include AutoLayoutColumn(0, 5px);
+  li {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 44px;
+    color: #FFFFFF;
+  }
+}
+
+.home__btns {
+  @include AutoLayoutRow(0, 72px);
+}
