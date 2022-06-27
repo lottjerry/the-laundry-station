@@ -1,9 +1,9 @@
-import logo from "/Users/lottj/the-laundry-station/src/assets/img/logo.png"
+import logo from "../assets/img/logo.png"
 import { UilTelegramAlt,UilMapMarker } from "@iconscout/react-unicons"
 
 export default function Home() {
   return (
-    <section className="home section" id="home">
+    <section className="home" id="home">
       <img 
         src={logo} 
         alt="The Laundry Station Logo" 

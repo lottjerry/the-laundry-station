@@ -2,7 +2,7 @@ export default function Header() {
   return ( 
     <header className="header" id="header">
       <nav className="nav" id="nav">
-        <a href="#" className="nav__title">The Laundry Station</a>
+        <a href="#home" className="nav__title">The Laundry Station</a>
         <ul className="nav__list">
           <li>
             <a href="#home" className="nav__item active-item">Home</a>

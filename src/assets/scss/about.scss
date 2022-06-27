@@ -1,0 +1,10 @@
+@import './mixins';
+@import './variables';
+
+.about__content {
+  @include AutoLayoutRow(0,30px);
+}
+
+.soap__machine {
+  width: 50px;
+}
