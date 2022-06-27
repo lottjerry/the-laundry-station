@@ -40,12 +40,12 @@
 }
 
 .home__btns {
-  @include AutoLayoutRow(0, 72px);
+  @include AutoLayoutRow(0, 25px);
 }
 
 .button {
   @include AutoLayoutRow(7px,15px);
-  width: 175px;
+  width: 150px;
   height: 50px;
   background: $black07-color;
   box-shadow: 8px 8px 3px $box-shadow-color;
