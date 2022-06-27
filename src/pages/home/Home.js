@@ -1,4 +1,4 @@
-import logo from "../assets/img/logo.png"
+import logo from "/Users/lottj/the-laundry-station/src/assets/img/logo.png"
 import { UilTelegramAlt } from "@iconscout/react-unicons"
 
 export default function Home() {
