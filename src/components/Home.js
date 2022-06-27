@@ -1,6 +1,5 @@
 import logo from "../assets/img/logo.png"
-import Button from "./Button"
-import telegram from "../assets/img/telegram-alt.svg"
+import { UilTelegramAlt } from "@iconscout/react-unicons"
 
 export default function Home() {
   return (
@@ -20,7 +19,14 @@ export default function Home() {
           </ul>
         </div>
         <div className="home__btns">
-          <Button text="Contact Us" src={telegram} alt="Telegram Icon"/>
+          <div className="button">
+            <div className="button__text">Contact Us</div>
+            <div className="icon"><UilTelegramAlt size="20"/></div>
+          </div>
+          <div className="button">
+            <div className="button__text">Contact Us</div>
+            <div className="icon"><UilTelegramAlt size="20"/></div>
+          </div>
         </div>
       </div>
     </section>

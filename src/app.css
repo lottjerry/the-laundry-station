@@ -43,6 +43,8 @@ a {
 .nav__title:hover {
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: #F42222;
+  stroke: #F42222;
+  stroke-width: 0.5px;
 }
 
 .nav__item {
@@ -53,11 +55,15 @@ a {
 .nav__item:hover {
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: #F42222;
+  stroke: #F42222;
+  stroke-width: 0.5px;
 }
 
 .active-item {
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: #F42222;
+  stroke: #F42222;
+  stroke-width: 0.5px;
 }
 
 .home {
@@ -146,6 +152,8 @@ a {
 .button:hover {
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: #F42222;
+  stroke: #F42222;
+  stroke-width: 0.5px;
 }
 
 .button__text {
@@ -161,4 +169,4 @@ body {
   background-size: cover;
   color: #fff;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=app.css.map */

@@ -20,4 +20,6 @@ $gap) {
 @mixin HoverActive() {
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: #F42222;
+  stroke: #F42222;
+  stroke-width: 0.5px;
 }
