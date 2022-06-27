@@ -4,7 +4,7 @@
 .heading {
   @include AutoLayoutColumn(0, 5px);
   align-items: center;
-  margin-top: 150px;
+  margin: 50px 0;
 }
 
 .title {

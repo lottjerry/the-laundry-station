@@ -172,7 +172,8 @@ a {
 }
 
 .soap__machine {
-  width: 300px;
+  width: 200px;
+  border-radius: 10px;
 }
 
 .footer {
@@ -231,7 +232,7 @@ a {
   padding: 0;
   gap: 5px;
   align-items: center;
-  margin-top: 150px;
+  margin: 50px 0;
 }
 
 .title {
