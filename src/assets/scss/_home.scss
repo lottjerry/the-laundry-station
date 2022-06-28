@@ -43,7 +43,7 @@
 }
 
 .button {
-  @include AutoLayoutRow(7px,15px);
+  @include AutoLayoutRow(7px, 15px);
   width: 170px;
   height: 40px;
   background: $black07-color;

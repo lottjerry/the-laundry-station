@@ -3,7 +3,7 @@ import { UilTelegramAlt,UilMapMarker } from "@iconscout/react-unicons"
 
 export default function Home() {
   return (
-    <section className="home" id="home">
+    <section className="home section" id="home">
       <img 
         src={logo} 
         alt="The Laundry Station Logo" 

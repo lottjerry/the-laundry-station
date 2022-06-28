@@ -2,10 +2,22 @@
 @import './variables';
 
 .about__content {
-  @include AutoLayoutRow(0,30px);
+  @include AutoLayoutRow(0, 50px);
 }
 
 .soap__machine {
   width: 200px;
   border-radius: 10px;
+  border: $image-border;
+  filter: $image-filter;
+}
+
+.about-content__list {
+  @include AutoLayoutColumn(0, 22px);
+  font-size: 20px;
+  li {
+    background: url(/src/assets/img/check.svg) no-repeat top left;
+    margin: 0;
+    padding: 4px 0 4px 40px;
+  }
 }

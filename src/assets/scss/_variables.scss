@@ -7,3 +7,8 @@ $box-shadow-color: rgba(0, 0, 0, 0.4);
 
 // Fonts
 $default-font: 'Inter', sans-serif;
+
+//
+$image-border: 5px solid $border-color;
+$image-filter: drop-shadow(18px 18px 4px $black07-color);
+$button-shadow: 8px 8px 3px $box-shadow-color;
