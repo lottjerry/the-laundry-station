@@ -1,6 +1,7 @@
 @import './mixins';
 @import './variables';
 
+
 .about__content {
   @include AutoLayoutRow(0, 50px);
 }
