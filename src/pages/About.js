@@ -15,7 +15,7 @@ export default function About(){
           <li>Open 24/7 365</li>
           <li>Friendly Customer Service</li>
           <li>Safe Location</li>
-          <li>22 Wahsers and 16 Dryers (2 Commercial Washers)</li>
+          <li>20 Wahsers and 18 Dryers (2 Industrial Size Dryers)</li>
           <li>Vending Machines, Detergent Machines, and more</li>
         </ul>
       </div>
