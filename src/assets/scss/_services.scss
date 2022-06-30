@@ -1,0 +1,29 @@
+@import './mixins';
+@import './variables';
+
+.services {
+  padding: 0 100px;
+}
+
+.services__content {
+  @include AutoLayoutColumn(40px,10px);
+  align-items: center;
+  background-color: $black07-color;
+  border-radius: 10px;
+}
+
+.services-content__header {
+  @include AutoLayoutRow(0, 50px)
+}
+
+.services-header__img {
+  width: 200px;
+  height: 200px;
+  border: $image-border;
+  border-radius: 50%;
+}
+
+.services-header__title {
+  font-size: 40px;
+  font-weight: 600;
+}
