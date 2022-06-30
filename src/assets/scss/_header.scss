@@ -4,6 +4,7 @@
 .nav {
   @include AutoLayoutRow(5px 0, 275px);
   position: fixed;
+  z-index: 0;
   top: 0;
   width: 100%;
   height: 3rem;
