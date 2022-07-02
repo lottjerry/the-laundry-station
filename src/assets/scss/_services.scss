@@ -1,15 +1,9 @@
 @import './mixins';
 @import './variables';
 
-.services {
-  padding: 0 100px;
-}
-
 .services__content {
-  @include AutoLayoutColumn(40px,10px);
+  @include AutoLayoutColumn(40px,40px);
   align-items: center;
-  background-color: $black07-color;
-  border-radius: 10px;
 }
 
 .services-content__header {
@@ -17,13 +11,43 @@
 }
 
 .services-header__img {
+  z-index: -1;
   width: 200px;
   height: 200px;
   border: $image-border;
   border-radius: 50%;
+  filter: $image-filter;
 }
 
 .services-header__title {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 600;
+  .center {
+    text-align: center;
+  }
+}
+
+.services__btns {
+  @include AutoLayoutRow(0, 25px);
+}
+
+.services__btn {
+  @include AutoLayoutRow(7px, 15px);
+  width: 170px;
+  height: 40px;
+  background: $black07-color;
+  box-shadow: 8px 8px 3px $box-shadow-color;
+  border-radius: 15px;
+  cursor: pointer;
+
+  &:hover {
+    @include HoverActive();
+  }
+}
+
+.services-button__text {
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 15px;
+  line-height: 29px;
 }

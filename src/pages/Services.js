@@ -1,5 +1,6 @@
 import Heading from "../components/Heading";
 import FoldedClothes from '../assets/img/folded-clothes.jpg'
+import { UilAngleDown } from '@iconscout/react-unicons'
 
 export default function Services() {
   return (
@@ -12,10 +13,20 @@ export default function Services() {
             alt="Folded Clothes" 
             className="services-header__img"
           />
-          <div className="services-header__title">Drop-off</div>
+          <div className="services-header__title">
+            <p class="center">Drop-off</p>
+            <p>Available MON - FRI</p>
+          </div>
         </div>
-        <div className="services-content__body">
-          
+        <div className="services__btns">
+          <div className="services__btn">
+            <div className="services-btn__text">By Basket</div>
+            <div className="arrow"><UilAngleDown size="30"/></div>
+          </div>
+          <div className="services__btn">
+            <div className="services-btn__text">By Size</div>
+            <div className="arrow"><UilAngleDown size="30"/></div>
+          </div>
         </div>
       </div>
     </section>
