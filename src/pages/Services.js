@@ -1,8 +1,11 @@
 import Heading from "../components/Heading";
 import FoldedClothes from '../assets/img/folded-clothes.jpg'
 import { UilAngleDown } from '@iconscout/react-unicons'
+import { useState } from "react";
 
 export default function Services() {
+  const [isOpen1, setIsOpen1] = useState(false)
+
   return (
     <section className="services" id="services">
       <Heading title="Services" subtitle="Professional service for all your laundry needs."/>
@@ -27,7 +30,7 @@ export default function Services() {
           </div>
         </div>
         <div className="services__btns">
-          <div className="services__btn">
+          <div className="services__btn"  onClick={() => setIsOpen1(!isOpen1)}>
             <div className="services-btn__text">By Basket</div>
             <div className="arrow"><UilAngleDown size="30"/></div>
           </div>
@@ -36,8 +39,8 @@ export default function Services() {
             <div className="arrow"><UilAngleDown size="30"/></div>
           </div>
         </div>
+        {isOpen1 && <div className={isOpen1 ? "basket__content show" : "basket__content"}>basket content</div>}
       </div>
     </section>
-    
   )
 }

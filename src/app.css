@@ -381,6 +381,11 @@ a {
   line-height: 29px;
 }
 
+.basket__content {
+  font-size: 30px;
+  font-weight: 700;
+}
+
 body {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/src/assets/img/background.jpg) no-repeat center fixed;
   background-size: cover;
