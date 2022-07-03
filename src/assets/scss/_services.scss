@@ -12,18 +12,38 @@
 
 .services-header__img {
   z-index: -1;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border: $image-border;
   border-radius: 50%;
   filter: $image-filter;
 }
 
+.services-header__info {
+  @include AutoLayoutColumn(0,30px);
+  align-items: center;
+}
+
 .services-header__title {
-  font-size: 30px;
+  @include AutoLayoutColumn(0,20px);
+  font-size: 35px;
   font-weight: 600;
-  .center {
-    text-align: center;
+  .head {
+    align-self: center;
+  }
+  .sub-head {
+    font-size: 25px;
+  }
+}
+
+.services-header__list {
+  @include AutoLayoutColumn(0, 22px);
+  font-size: 20px;
+
+  li {
+    background: url(/src/assets/img/caret-right.svg) no-repeat top left;
+    margin: 0;
+    padding: 4px 0 4px 40px;
   }
 }
 
