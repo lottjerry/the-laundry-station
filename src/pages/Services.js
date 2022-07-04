@@ -32,14 +32,14 @@ export default function Services() {
         <div className="services__btns">
           <div className="services__btn"  onClick={() => setIsOpen1(!isOpen1)}>
             <div className="services-btn__text">By Basket</div>
-            <div className="arrow"><UilAngleDown size="30"/></div>
+            <UilAngleDown className={(isOpen1 ? "arrow-up" : "arrow-down")} size="30"/>
           </div>
           <div className="services__btn">
             <div className="services-btn__text">By Size</div>
-            <div className="arrow"><UilAngleDown size="30"/></div>
+            <UilAngleDown className="btn-arrow" size="30"/>
           </div>
         </div>
-        {isOpen1 && <div className={isOpen1 ? "basket__content show" : "basket__content"}>basket content</div>}
+      <div className={isOpen1 ? "content show" : "content"}>basket content</div>
       </div>
     </section>
   )
