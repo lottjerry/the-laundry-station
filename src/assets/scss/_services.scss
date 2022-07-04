@@ -48,12 +48,12 @@
 }
 
 .services__btns {
-  @include AutoLayoutRow(0, 25px);
+  @include AutoLayoutColumn(0, 25px);
 }
 
 .services__btn {
   @include AutoLayoutRow(7px, 15px);
-  width: 170px;
+  width: 800px;
   height: 40px;
   background: $black07-color;
   box-shadow: 8px 8px 3px $box-shadow-color;
@@ -72,7 +72,13 @@
   line-height: 29px;
 }
 
-.content {
+.basket__content {
+  font-size: 30px;
+  font-weight: 700;
+  display: none;
+}
+
+.size__content {
   font-size: 30px;
   font-weight: 700;
   display: none;

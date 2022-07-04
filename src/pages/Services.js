@@ -5,6 +5,7 @@ import { useState } from "react";
 
 export default function Services() {
   const [isOpen1, setIsOpen1] = useState(false)
+  const [isOpen2, setIsOpen2] = useState(false)
 
   return (
     <section className="services" id="services">
@@ -29,17 +30,18 @@ export default function Services() {
             </ul>
           </div>
         </div>
-        <div className="services__btns">
-          <div className="services__btn"  onClick={() => setIsOpen1(!isOpen1)}>
-            <div className="services-btn__text">By Basket</div>
-            <UilAngleDown className={(isOpen1 ? "arrow-up" : "arrow-down")} size="30"/>
-          </div>
-          <div className="services__btn">
-            <div className="services-btn__text">By Size</div>
-            <UilAngleDown className="btn-arrow" size="30"/>
-          </div>
+      <div className="services__btns">
+        <div className="services__btn" onClick={() => setIsOpen1(!isOpen1)}>
+          <div className="services-btn__text">By Basket</div>
+          <UilAngleDown className={(isOpen1 ? "arrow-up" : "arrow-down")} size="30"/>
         </div>
-      <div className={isOpen1 ? "content show" : "content"}>basket content</div>
+        <div className={isOpen1 ? "basket__content show" : "basket__content hide"}>basket content</div>
+        <div className="services__btn" onClick={() => setIsOpen2(!isOpen2)}>
+          <div className="services-btn__text">By Size</div>
+          <UilAngleDown className={(isOpen2 ? "arrow-up" : "arrow-down")} size="30"/>
+        </div>
+        <div className={isOpen2 ? "size__content show" : "size__content"}>size content</div>
+      </div>
       </div>
     </section>
   )

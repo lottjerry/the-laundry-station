@@ -345,9 +345,9 @@ a {
 
 .services__btns {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 0;
   gap: 25px;
 }
@@ -359,7 +359,7 @@ a {
   align-items: center;
   padding: 7px;
   gap: 15px;
-  width: 170px;
+  width: 800px;
   height: 40px;
   background: rgba(0, 0, 0, 0.7);
   box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.4);
@@ -381,7 +381,13 @@ a {
   line-height: 29px;
 }
 
-.content {
+.basket__content {
+  font-size: 30px;
+  font-weight: 700;
+  display: none;
+}
+
+.size__content {
   font-size: 30px;
   font-weight: 700;
   display: none;
