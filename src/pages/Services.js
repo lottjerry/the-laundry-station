@@ -1,11 +1,8 @@
 import Heading from "../components/Heading";
 import FoldedClothes from '../assets/img/folded-clothes.jpg'
-import { UilAngleDown } from '@iconscout/react-unicons'
-import { useState } from "react";
+import Collapsible from "../components/Collapsible";
 
 export default function Services() {
-  const [isOpen1, setIsOpen1] = useState(false)
-  const [isOpen2, setIsOpen2] = useState(false)
 
   return (
     <section className="services" id="services">
@@ -31,16 +28,14 @@ export default function Services() {
           </div>
         </div>
       <div className="services__btns">
-        <div className="services__btn" onClick={() => setIsOpen1(!isOpen1)}>
-          <div className="services-btn__text">By Basket</div>
-          <UilAngleDown className={(isOpen1 ? "arrow-up" : "arrow-down")} size="30"/>
-        </div>
-        <div className={isOpen1 ? "basket__content show" : "basket__content hide"}>basket content</div>
-        <div className="services__btn" onClick={() => setIsOpen2(!isOpen2)}>
-          <div className="services-btn__text">By Size</div>
-          <UilAngleDown className={(isOpen2 ? "arrow-up" : "arrow-down")} size="30"/>
-        </div>
-        <div className={isOpen2 ? "size__content show" : "size__content"}>size content</div>
+        <Collapsible
+          label="By Basket" 
+          content="Basket Content"
+        />
+        <Collapsible 
+          label="By Size"
+          content="Size Content"
+        />
       </div>
       </div>
     </section>
