@@ -4,6 +4,7 @@
 .services__content {
   @include AutoLayoutColumn(40px,40px);
   align-items: center;
+  margin: 0 100px;
 }
 
 .services-content__header {
@@ -47,61 +48,18 @@
   }
 }
 
-.services__btns {
-  @include AutoLayoutColumn(0, 25px);
+.services__prices {
+  @include AutoLayoutColumn(0,20px);
+  background-color: $black07-color;
+  border-radius: 20px;
+  width: 700px;
 }
 
-.services__btn {
-  @include AutoLayoutRow(7px, 15px);
-  width: 800px;
-  height: 40px;
-  background: $black07-color;
-  box-shadow: 8px 8px 3px $box-shadow-color;
-  border-radius: 15px;
-  cursor: pointer;
-
-  &:hover {
-    @include HoverActive();
-  }
-}
-
-.services-button__text {
-  font-style: normal;
-  font-weight: 1000;
-  font-size: 15px;
-  line-height: 29px;
-}
-
-.basket__content {
+.services-prices__title {
   font-size: 30px;
-  font-weight: 700;
-  display: none;
-}
-
-.size__content {
-  font-size: 30px;
-  font-weight: 700;
-  display: none;
-}
-
-.show {
-  display: flex;
-}
-
-.arrow-up {
-  animation: rotate_up 0.5s forwards;
-}
-
-.arrow-down {
-  animation: rotate_down 0.5s forwards;
-}
-
-@keyframes rotate_up {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(-180deg);}
-}
-
-@keyframes rotate_down {
-  from {transform: rotate(-180deg);}
-  to {transform: rotate(0deg);}
+  font-weight: 500;
+  border-bottom: 2px solid #F42222;
+  padding: 0 0 5px;
+  margin: 10px 20px;
+  width: fill;
 }

@@ -1,6 +1,6 @@
 import Heading from "../components/Heading";
 import FoldedClothes from '../assets/img/folded-clothes.jpg'
-import Collapsible from "../components/Collapsible";
+import PriceCalculator from "../components/PriceCalculator";
 
 export default function Services() {
 
@@ -27,16 +27,13 @@ export default function Services() {
             </ul>
           </div>
         </div>
-      <div className="services__btns">
-        <Collapsible
-          label="By Basket" 
-          content="Basket Content"
-        />
-        <Collapsible 
-          label="By Size"
-          content="Size Content"
-        />
-      </div>
+        <div className="services__prices">
+          <div className="services-prices__title">Prices</div>
+          <div className="services-prices__description">
+            Prices are by the basket or $1.39lb. We will charge you for the lowest price option. To give you an idea, if you have a large basket with a few comforters in it, the price by the basket will at least be $35. Therefore, we will charge by the pound because the basket might now weight no more than 10 pounds which will save you money. 
+          </div>
+          <PriceCalculator />
+        </div>
       </div>
     </section>
   )
