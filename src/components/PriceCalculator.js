@@ -1,39 +1,39 @@
 import { useState } from "react"
+import { UilCalculator } from '@iconscout/react-unicons'
 
 export default function PriceCalculator(){
-  const [pointsGiven, setPointsGiven] = useState(0);
-  const [pointsPossible, setPointsPossible] = useState(0);
-  const [price, setPrice] = useState(0);
+  const [price, setPrice] = useState(0)
 
-  const calculate = (e) => {
-    e.preventDefault();
-    const formValid = +pointsGiven >= 0 && +pointsPossible > 0;
-    if (!formValid) {
-      return;
-    }
-    setPrice((+pointsGiven / +pointsPossible) * 100);
-  };
+  const calcPrice = () => {
+    let num = (1.39 * 2)
+    num = num.toFixed(2)
+    setPrice(num)
+  }
 
   return (
-    <div className="App">
-      <form onSubmit={calculate}>
-        <div>
-          <label>points given</label>
-          <input
-            value={pointsGiven}
-            onChange={(e) => setPointsGiven(e.target.value)}
+    <div className="calculator">
+      <div className="calculator__title">Price Calculator</div>
+      
+      <div className="form">
+        <label className="basket__label">Basket Weight: 
+          <input 
+            className="basket__input"
+            type="text" 
+            placeholder="0"
+            maxlength="3"
+            min="1"
+            max="999"
           />
+          lbs
+        </label>
+        <div className="price">
+          Price: ${price}
         </div>
-        <div>
-          <label>points possible</label>
-          <input
-            value={pointsPossible}
-            onChange={(e) => setPointsPossible(e.target.value)}
-          />
+        <div className="button" onClick={calcPrice}>
+            <div className="button__text">Calculate</div>
+            <div className="icon"><UilCalculator size="20"/></div>
         </div>
-        <button type="submit">calculate</button>
-      </form>
-      <div>${price}</div>
+      </div>
     </div>
   )
 }

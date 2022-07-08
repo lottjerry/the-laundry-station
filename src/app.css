@@ -358,11 +358,102 @@ a {
 
 .services-prices__title {
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 700;
   border-bottom: 2px solid #F42222;
   padding: 0 0 5px;
   margin: 10px 20px;
-  width: fill;
+  width: 650px;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0;
+  gap: 10px;
+  align-self: center;
+  align-items: center;
+  padding: 10px;
+  border: 3px dotted #f422223d;
+  border-radius: 5px;
+}
+
+.calculator__title {
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #F42222;
+  stroke: #F42222;
+  stroke-width: 0.5px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0;
+  gap: 20px;
+}
+
+.basket__label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.basket__input {
+  width: 70px;
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border: 3px solid #f422223d;
+  outline: none;
+  transition: 0.5s ease-in-out;
+}
+
+.basket__input:focus {
+  border: 3px solid #f42222;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  gap: 15px;
+  align-self: center;
+  width: 170px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.button:hover {
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #F42222;
+  stroke: #F42222;
+  stroke-width: 0.5px;
+}
+
+.button__text {
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 15px;
+  line-height: 29px;
 }
 
 body {
