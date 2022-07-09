@@ -3,7 +3,6 @@
 
 .calculator {
   @include AutoLayoutColumn(0, 10px);
-  align-self: center;
   align-items: center;
   padding: 10px;
   border: 3px dotted #f422223d;
@@ -14,15 +13,23 @@
   @include HoverActive();
   font-size: 25px;
   font-weight: 700;
+  padding: 10px;
+  border-bottom: 3px dotted #f422223d;
 }
 
 .form {
-  @include AutoLayoutColumn(0, 20px);
+  @include AutoLayoutColumn(10px, 30px);
 }
 
 .basket__label {
   @include AutoLayoutRow(0, 10px);
   font-size: 20px;
+}
+
+.price {
+  font-size: 30px;
+  align-self: center;
+  margin-top: 20px;
 }
 
 .basket__input {

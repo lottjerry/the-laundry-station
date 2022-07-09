@@ -53,6 +53,7 @@
   background-color: $black07-color;
   border-radius: 20px;
   width: 700px;
+  padding: 20px;
 }
 
 .services-prices__title {
@@ -60,6 +61,62 @@
   font-weight: 700;
   border-bottom: 2px solid #F42222;
   padding: 0 0 5px;
-  margin: 10px 20px;
+  margin: 10px 10px;
   width: 650px;
+}
+
+.services-prices__description {
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.services-prices__breakdown {
+  @include AutoLayoutRow(0, 40px);
+}
+
+.breakdown__details {
+  @include AutoLayoutColumn(0, 10px);
+  align-items: center;
+  padding: 10px;
+  border: 3px dotted #f422223d;
+  border-radius: 5px;
+  align-self: start;
+}
+
+.breakdown__title {
+  @include HoverActive();
+  font-size: 25px;
+  font-weight: 700;
+  padding: 10px;
+  border-bottom: 3px dotted #f422223d;
+}
+
+.breakdown__subtitle {
+  font-size: 20px;
+}
+
+.breakdown__list {
+  @include AutoLayoutColumn(0,20px);
+  align-items: center;
+  margin-top: 20px;
+}
+
+.small {
+  @include AutoLayoutColumn(0,5px);
+  align-items: center;
+  font-size: 18px;
+}
+
+.medium {
+  @include AutoLayoutColumn(0, 5px);
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.large {
+  @include AutoLayoutColumn(0, 5px);
+  align-items: center;
+  font-size: 22px;
+  font-weight: 800;
 }

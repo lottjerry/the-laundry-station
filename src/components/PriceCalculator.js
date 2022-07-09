@@ -3,11 +3,11 @@ import { UilCalculator } from '@iconscout/react-unicons'
 
 export default function PriceCalculator(){
   const [price, setPrice] = useState(0)
+  const[weight, setWeight] = useState(0)
 
   const calcPrice = () => {
-    let num = (1.39 * 2)
-    num = num.toFixed(2)
-    setPrice(num)
+    let totalPrice = (1.39 * weight).toFixed(2)
+    setPrice(totalPrice)
   }
 
   return (
@@ -23,15 +23,16 @@ export default function PriceCalculator(){
             maxlength="3"
             min="1"
             max="999"
+            onChange={e => setWeight(e.target.value)}
           />
           lbs
         </label>
-        <div className="price">
-          Price: ${price}
-        </div>
         <div className="button" onClick={calcPrice}>
             <div className="button__text">Calculate</div>
             <div className="icon"><UilCalculator size="20"/></div>
+        </div>
+        <div className="price">
+          Price: ${price}
         </div>
       </div>
     </div>

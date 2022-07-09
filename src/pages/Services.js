@@ -30,9 +30,21 @@ export default function Services() {
         <div className="services__prices">
           <div className="services-prices__title">Prices</div>
           <div className="services-prices__description">
-            Prices are by the basket or $1.39lb. We will charge you for the lowest price option. To give you an idea, if you have a large basket with a few comforters in it, the price by the basket will at least be $35. Therefore, we will charge by the pound because the basket might now weight no more than 10 pounds which will save you money. 
+            Prices are by the basket or $1.39lb. We will charge you for the lowest price option. To give you an idea, if you have a large basket with a few comforters in it, the price by the basket will at least be $35. Therefore, we will charge by the pound because the basket might not weight no more than 10 pounds which will save you money. Use our price calculator to get a estimate of how much a basket of clothes will cost you.
           </div>
-          <PriceCalculator />
+          <div className="services-prices__breakdown">
+            <div className="breakdown__details">
+              <div className="breakdown__title">Price Breakdown</div>
+              <div className="breakdown__subtitle">By the basket or $1.39lb</div>
+              <ul className="breakdown__list">
+                <li className="small"><p>Small Basket</p><p>$0 to $24</p></li>
+                <li className="medium"><p>Medium Basket</p><p>$25 to $34</p></li>
+                <li className="large"><p>Large Basket</p><p>$35 and Up</p></li>
+              </ul>
+            </div>
+            <PriceCalculator /> 
+          </div>
+          
         </div>
       </div>
     </section>
