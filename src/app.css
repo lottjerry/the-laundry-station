@@ -351,6 +351,7 @@ a {
   align-items: flex-start;
   padding: 0;
   gap: 20px;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 20px;
   width: 700px;
@@ -486,9 +487,10 @@ a {
   align-items: flex-start;
   padding: 10px;
   gap: 30px;
+  align-items: center;
 }
 
-.basket__label {
+.basket-weight__label {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -498,15 +500,9 @@ a {
   font-size: 20px;
 }
 
-.price {
-  font-size: 30px;
-  align-self: center;
-  margin-top: 20px;
-}
-
-.basket__input {
-  width: 70px;
-  font-size: 25px;
+.basket-weight__input {
+  width: 50px;
+  font-size: 20px;
   background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
   border: 3px solid #f422223d;
@@ -514,8 +510,36 @@ a {
   transition: 0.5s ease-in-out;
 }
 
-.basket__input:focus {
+.basket-weight__input:focus {
   border: 3px solid #f42222;
+}
+
+.basket-select__label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.basket-select__input {
+  width: 100px;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border: 3px solid #f422223d;
+  outline: none;
+  transition: 0.5s ease-in-out;
+}
+
+.basket-select__input:focus {
+  border: 3px solid #f42222;
+}
+
+.basket-select__input option {
+  background-color: #000;
 }
 
 ::placeholder {
@@ -551,6 +575,11 @@ a {
   font-weight: 1000;
   font-size: 15px;
   line-height: 29px;
+}
+
+.price {
+  font-size: 30px;
+  margin-top: 10px;
 }
 
 body {

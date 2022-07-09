@@ -50,6 +50,7 @@
 
 .services__prices {
   @include AutoLayoutColumn(0,20px);
+  align-items: center;
   background-color: $black07-color;
   border-radius: 20px;
   width: 700px;
@@ -72,6 +73,7 @@
 
 .services-prices__breakdown {
   @include AutoLayoutRow(0, 40px);
+  
 }
 
 .breakdown__details {
