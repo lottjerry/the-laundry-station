@@ -143,6 +143,7 @@ a {
   gap: 15px;
   width: 170px;
   height: 40px;
+  color: #fff;
   background: rgba(0, 0, 0, 0.7);
   box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.4);
   border-radius: 15px;
@@ -580,6 +581,63 @@ a {
 .price {
   font-size: 30px;
   margin-top: 10px;
+}
+
+.contact {
+  margin-bottom: 150px;
+}
+
+.contact__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 350px;
+  gap: 50px;
+}
+
+.contact-content__group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: 20px;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  gap: 15px;
+  width: 170px;
+  height: 40px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.button:hover {
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #F42222;
+  stroke: #F42222;
+  stroke-width: 0.5px;
+}
+
+.button__text {
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 15px;
+  line-height: 29px;
+}
+
+.content-group__text {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 body {

@@ -1,0 +1,41 @@
+@import './mixins';
+@import './variables';
+
+.contact {
+  margin-bottom: 150px;
+}
+
+.contact__content {
+  @include AutoLayoutColumn(0 350px, 50px);
+}
+
+.contact-content__group {
+  @include AutoLayoutRow(0, 20px);
+}
+
+.button {
+  @include AutoLayoutRow(7px, 15px);
+  width: 170px;
+  height: 40px;
+  color: #fff;
+  background: $black07-color;
+  box-shadow: 8px 8px 3px $box-shadow-color;
+  border-radius: 15px;
+  cursor: pointer;
+
+  &:hover {
+    @include HoverActive();
+  }
+}
+
+.button__text {
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 15px;
+  line-height: 29px;
+}
+
+.content-group__text {
+  font-size: 20px;
+  font-weight: bold;
+}

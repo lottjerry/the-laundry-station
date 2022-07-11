@@ -19,14 +19,14 @@ export default function Home() {
           </ul>
         </div>
         <div className="home__btns">
-          <div className="button">
+          <a className="button" href="#contact">
             <div className="button__text">Contact Us</div>
             <div className="icon"><UilTelegramAlt size="20"/></div>
-          </div>
-          <div className="button">
-            <div className="button__text">Directions</div>
+          </a>
+          <a className="button" href="https://www.google.com/maps/place/The+Laundry+Station/@31.6015281,-89.2006045,18.06z/data=!4m5!3m4!1s0x889ccd5ac99e3ea7:0xb37c37ebd769f9c2!8m2!3d31.6013829!4d-89.1993865" target="_blank" rel="noopener noreferrer">
+            <div className="button__text">Location</div>
             <div className="icon"><UilMapMarker size="20"/></div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
