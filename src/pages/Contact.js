@@ -4,7 +4,7 @@ import { UilPhone, UilAt, UilMapMarker } from '@iconscout/react-unicons'
 export default function Contact () {
   return(
     <section className="contact" id="contact">
-      <Heading title="Contact Us" subtitle="Have questions? We are here to help!"/>
+      <Heading  title="Contact Us" subtitle="Have questions? We are here to help!"/>
       <div className="contact__content">
         <div className="contact-content__group">
           <a className="button" href="tel:601-498-5136">
