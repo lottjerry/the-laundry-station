@@ -7,7 +7,7 @@ export default function PriceCalculator(){
   const[size, setSize] = useState(0)
 
 
-  function calcPrice() {
+  const calcPrice = () => {
     let weightPrice = 1.39 * weight
     let totalPrice 
     let sizePrice
