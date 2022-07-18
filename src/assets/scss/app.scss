@@ -1,19 +1,20 @@
-@import './resets';
-@import './variables';
-@import './navbar';
-@import './home';
-@import './about';
-@import './footer';
-@import './heading';
-@import './services';
-@import './pricecalculator';
-@import './contact';
-@import './totopbutton';
-@import './button';
+@import "./resets";
+@import "./variables";
+@import "./navbar";
+@import "./home";
+@import "./about";
+@import "./footer";
+@import "./heading";
+@import "./services";
+@import "./pricecalculator";
+@import "./contact";
+@import "./totopbutton";
+@import "./button";
 
 body {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/src/assets/img/background.jpg) no-repeat center fixed;
-  background-size: cover;
-  color: $text-color;
-  font-family: $default-font;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url(/src/assets/img/background.jpg) no-repeat center fixed;
+	background-size: cover;
+	color: $default-color;
+	font-family: $default-font;
 }

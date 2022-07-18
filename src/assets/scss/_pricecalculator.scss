@@ -1,98 +1,97 @@
-@import './mixins';
-@import './variables';
+@import "./mixins";
+@import "./variables";
 
 .calculator {
-  @include AutoLayoutColumn(0, 10px);
-  align-items: center;
-  padding: 10px;
-  border: 3px dotted #f422223d;
-  border-radius: 5px;
+	@include AutoLayoutColumn(0, 10px);
+	align-items: center;
+	padding: 10px;
+	border: 3px dotted #f422223d;
+	border-radius: 5px;
 }
 
 .calculator__title {
-  @include HoverActive();
-  font-size: 25px;
-  font-weight: 700;
-  padding: 10px;
-  border-bottom: 3px dotted #f422223d;
+	@include HoverActive();
+	font-size: 25px;
+	font-weight: 700;
+	padding: 10px;
+	border-bottom: 3px dotted #f422223d;
 }
 
 .form {
-  @include AutoLayoutColumn(10px, 30px);
-  align-items: center;
+	@include AutoLayoutColumn(10px, 30px);
+	align-items: center;
 }
 
-.basket-weight__label{
-  @include AutoLayoutRow(0, 10px);
-  font-size: 20px;
+.basket-weight__label {
+	@include AutoLayoutRow(0, 10px);
+	font-size: 20px;
 }
 
-.basket-weight__input{
-  width: 75px;
-  font-size: 20px;
-  background-color: $black07-color;
-  color: $text-color;
-  border: 3px solid #f422223d;
-  outline: none;
-  transition: 0.5s ease-in-out;
-  &:focus {
-    border: 3px solid #f42222;
-  }
+.basket-weight__input {
+	width: 75px;
+	font-size: 20px;
+	background-color: $black07-color;
+	color: $default-color;
+	border: 3px solid #f422223d;
+	outline: none;
+	transition: 0.5s ease-in-out;
+	&:focus {
+		border: 3px solid #f42222;
+	}
 }
 
 .basket-select__label {
-  @include AutoLayoutRow(0, 10px);
-  font-size: 20px;
+	@include AutoLayoutRow(0, 10px);
+	font-size: 20px;
 }
 
 .basket-select__input {
-  width: 100px;
-  font-size: 20px;
-  background-color: $black07-color;
-  color: $text-color;
-  border: 3px solid #f422223d;
-  outline: none;
-  transition: 0.5s ease-in-out;
+	width: 100px;
+	font-size: 20px;
+	background-color: $black07-color;
+	color: $default-color;
+	border: 3px solid #f422223d;
+	outline: none;
+	transition: 0.5s ease-in-out;
 
-  &:focus {
-    border: 3px solid #f42222;
-  }
+	&:focus {
+		border: 3px solid #f42222;
+	}
 
-  option {
-    background-color: #000;
-  }
+	option {
+		background-color: #000;
+	}
 }
 
 ::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: $text-color;
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: $default-color;
 }
 
 .button {
-  @include AutoLayoutRow(7px, 15px);
-  align-self: center;
-  width: 170px;
-  height: 40px;
-  background: $black07-color;
-  box-shadow: 8px 8px 3px $box-shadow-color;
-  border-radius: 15px;
-  border: 1px solid #f4222299;
-  cursor: pointer;
+	@include AutoLayoutRow(7px, 15px);
+	align-self: center;
+	width: 170px;
+	height: 40px;
+	background: $black07-color;
+	box-shadow: 8px 8px 3px $box-shadow-color;
+	border-radius: 15px;
+	border: 1px solid #f4222299;
+	cursor: pointer;
 
-  &:hover {
-    @include HoverActive();
-  }
+	&:hover {
+		@include HoverActive();
+	}
 }
 
 .button__text {
-  font-style: normal;
-  font-weight: 1000;
-  font-size: 15px;
-  line-height: 29px;
+	font-style: normal;
+	font-weight: 1000;
+	font-size: 15px;
+	line-height: 29px;
 }
 
-
 .price {
-  font-size: 30px;
-  margin-top: 10px;
+	font-size: 30px;
+	margin-top: 10px;
 }
