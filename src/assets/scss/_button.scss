@@ -1,0 +1,22 @@
+@import "./mixins";
+@import "./variables";
+
+.button {
+	@include AutoLayoutRow(7px, 15px);
+	width: 170px;
+	height: 40px;
+	background: $black07-color;
+	box-shadow: 8px 8px 3px $box-shadow-color;
+	border-radius: 15px;
+	cursor: pointer;
+	&:hover {
+		@include HoverActive();
+	}
+}
+
+.button__text {
+	font-style: normal;
+	font-weight: 1000;
+	font-size: 15px;
+	line-height: 29px;
+}
