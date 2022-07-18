@@ -665,6 +665,7 @@ a {
   bottom: 20px;
   right: 20px;
   width: 40px;
+  border: 1px solid #f4222299;
 }
 
 body {
