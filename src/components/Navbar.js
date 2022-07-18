@@ -1,11 +1,18 @@
 import ScrollspyNav from "react-scrollspy-nav";
 
 export default function Navbar() {
+	const scrollToTop = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth'
+		})
+	}
+	
 	return (
 		<nav className="nav" id="nav">
-			<a href="#" className="nav__title">
+			<div onClick={scrollToTop} className="nav__title">
 				The Laundry Station
-			</a>
+			</div>
 			<ScrollspyNav
 				scrollDuration="500"
 				scrollTargetIds={["home", "about", "services", "contact"]}

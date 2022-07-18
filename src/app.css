@@ -47,6 +47,7 @@ a {
   stroke: #F42222;
   stroke-width: 0.5px;
   transition: all 1s ease-in-out;
+  cursor: pointer;
 }
 
 .nav__item {
@@ -60,6 +61,7 @@ a {
   stroke: #F42222;
   stroke-width: 0.5px;
   transition: all 1s ease-in-out;
+  cursor: pointer;
 }
 
 .active-item {
@@ -68,6 +70,7 @@ a {
   stroke: #F42222;
   stroke-width: 0.5px;
   transition: all 1s ease-in-out;
+  cursor: pointer;
 }
 
 .home {
@@ -160,6 +163,7 @@ a {
   stroke: #F42222;
   stroke-width: 0.5px;
   transition: all 1s ease-in-out;
+  cursor: pointer;
 }
 
 .button__text {
@@ -249,6 +253,7 @@ a {
   stroke: #F42222;
   stroke-width: 0.5px;
   transition: all 1s ease-in-out;
+  cursor: pointer;
 }
 
 .heading {
@@ -408,6 +413,7 @@ a {
   stroke: #F42222;
   stroke-width: 0.5px;
   transition: all 1s ease-in-out;
+  cursor: pointer;
   font-size: 25px;
   font-weight: 700;
   padding: 10px;
@@ -483,6 +489,7 @@ a {
   stroke: #F42222;
   stroke-width: 0.5px;
   transition: all 1s ease-in-out;
+  cursor: pointer;
   font-size: 25px;
   font-weight: 700;
   padding: 10px;
@@ -578,6 +585,7 @@ a {
   stroke: #F42222;
   stroke-width: 0.5px;
   transition: all 1s ease-in-out;
+  cursor: pointer;
 }
 
 .button__text {
@@ -637,6 +645,7 @@ a {
   stroke: #F42222;
   stroke-width: 0.5px;
   transition: all 1s ease-in-out;
+  cursor: pointer;
 }
 
 .button__text {
@@ -649,6 +658,13 @@ a {
 .content-group__text {
   font-size: 20px;
   font-weight: bold;
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
 }
 
 body {
