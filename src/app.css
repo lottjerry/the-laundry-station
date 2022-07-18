@@ -576,6 +576,7 @@ a {
   background: rgba(0, 0, 0, 0.7);
   box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.4);
   border-radius: 15px;
+  border: 1px solid #f4222299;
   cursor: pointer;
 }
 

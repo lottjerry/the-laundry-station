@@ -2,6 +2,7 @@ export default function Button(props) {
 	return (
 		<a
 			className="button"
+			id={props.id}
 			href={props.href}
 			target={props.target}
 			rel={props.rel}

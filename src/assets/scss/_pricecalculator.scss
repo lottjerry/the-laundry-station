@@ -76,6 +76,7 @@
   background: $black07-color;
   box-shadow: 8px 8px 3px $box-shadow-color;
   border-radius: 15px;
+  border: 1px solid #f4222299;
   cursor: pointer;
 
   &:hover {
@@ -89,6 +90,7 @@
   font-size: 15px;
   line-height: 29px;
 }
+
 
 .price {
   font-size: 30px;
