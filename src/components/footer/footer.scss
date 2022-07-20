@@ -1,5 +1,4 @@
-@import "./mixins";
-@import "./variables";
+@import "../../assets/scss/styles.scss";
 
 .footer {
 	@include AutoLayoutRow(0, 10px);

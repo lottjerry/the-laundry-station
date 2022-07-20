@@ -1,5 +1,4 @@
-@import "./mixins";
-@import "./variables";
+@import "../../assets/scss/styles.scss";
 
 .calculator {
 	@include AutoLayoutColumn(0, 10px);

@@ -1,6 +1,7 @@
-import Heading from "../components/Heading";
+import Heading from "../../components/heading/Heading";
 import { UilPhone, UilAt, UilMapMarker } from "@iconscout/react-unicons";
-import Button from "../components/Button";
+import Button from "../../components/button/Button";
+import "./contact.scss";
 
 export default function Contact() {
 	const link =

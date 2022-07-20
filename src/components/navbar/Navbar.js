@@ -1,13 +1,14 @@
 import ScrollspyNav from "react-scrollspy-nav";
+import "./navbar.scss";
 
 export default function Navbar() {
 	const scrollToTop = () => {
 		window.scrollTo({
 			top: 0,
-			behavior: 'smooth'
-		})
-	}
-	
+			behavior: "smooth",
+		});
+	};
+
 	return (
 		<nav className="nav" id="nav">
 			<div onClick={scrollToTop} className="nav__title">

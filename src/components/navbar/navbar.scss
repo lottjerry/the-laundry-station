@@ -1,5 +1,4 @@
-@import "./mixins";
-@import "./variables";
+@import "../../assets/scss/styles.scss";
 
 .nav {
 	@include AutoLayoutRow(5px 0, 275px);

@@ -1,5 +1,4 @@
-@import './mixins';
-@import './variables';
+@import "../../assets/scss/styles.scss";
 
 .services__content {
   @include AutoLayoutColumn(40px,40px);
@@ -42,7 +41,7 @@
   font-size: 20px;
 
   li {
-    background: url(/src/assets/img/caret-right.svg) no-repeat top left;
+    background: url(../../assets/img/caret-right.svg) no-repeat top left;
     margin: 0;
     padding: 4px 0 4px 40px;
   }

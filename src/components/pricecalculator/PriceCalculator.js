@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { UilCalculator } from "@iconscout/react-unicons";
-import Button from "./Button";
+import Button from "../button/Button";
+import "./pricecalculator.scss";
 
 export default function PriceCalculator() {
 	const [price, setPrice] = useState(0);

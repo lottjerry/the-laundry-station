@@ -1,21 +1,22 @@
 import { useEffect, useState } from "react";
 import { UilArrowUp } from "@iconscout/react-unicons";
+import "./totopbutton.scss";
 
 export default function ToTopButton() {
-  const [showButton, setShowButton] = useState(false)
+	const [showButton, setShowButton] = useState(false);
 
 	const scrollToTop = () => {
 		window.scrollTo({
 			top: 0,
 			behavior: "smooth",
-		})
-	}
+		});
+	};
 
-  useEffect(() => {
+	useEffect(() => {
 		window.addEventListener("scroll", () => {
-      (window.pageYOffset > 300) ? setShowButton(true) : setShowButton(false)
-		})
-	}, [])
+			window.pageYOffset > 300 ? setShowButton(true) : setShowButton(false);
+		});
+	}, []);
 
 	return (
 		<>
