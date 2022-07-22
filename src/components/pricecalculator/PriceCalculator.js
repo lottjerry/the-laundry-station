@@ -59,7 +59,7 @@ export default function PriceCalculator() {
 						className="basket-weight__input"
 						type="text"
 						placeholder="0"
-						maxlength="6"
+						maxLength="6"
 						min="1"
 						max="999.99"
 						onChange={(e) => setWeight(e.target.value)}

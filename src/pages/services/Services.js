@@ -19,8 +19,8 @@ export default function Services() {
 					/>
 					<div className="services-header__info">
 						<div className="services-header__title">
-							<p class="head">Drop-off</p>
-							<p class="sub-head">Available MON - FRI</p>
+							<p className="head">Drop-off</p>
+							<p className="sub-head">Available MON - FRI</p>
 						</div>
 						<ul className="services-header__list">
 							<li>
