@@ -7,12 +7,20 @@ export default function PriceCalculator() {
 	const [price, setPrice] = useState(0);
 	const [weightPrice, setWeightPrice] = useState(0);
 	const [sizePrice, sizeSizePrice] = useState(0);
+	const [isShown, setIsShown] = useState(false);
 
 	const calcPrice = () => {
-		let total = 0;
-		sizePrice !== 0 && weightPrice > sizePrice ? (total = sizePrice) : (total = weightPrice);
-		setPrice(total.toFixed(2));
+		if (sizePrice !== 0 && weightPrice > sizePrice) {
+			setPrice(sizePrice.toFixed(2))
+			setIsShown(false)
+		} else {
+			setPrice(weightPrice.toFixed(2))
+			weightPrice !== 0 && weightPrice < 35 ? setIsShown(true) : setIsShown(false)
+		}
 	};
+	console.log(`Size: ${sizePrice}`)
+	console.log(`Weight: ${weightPrice}`)
+	console.log(isShown)
 
 	return (
 		<div className="calculator">
@@ -20,7 +28,7 @@ export default function PriceCalculator() {
 
 			<div className="form">
 				<label className="basket-select__label">
-					Basket sizePrice:
+					Basket Price:
 					<select
 						value={sizePrice}
 						onChange={(e) => sizeSizePrice(parseInt(e.target.value))}
@@ -50,7 +58,13 @@ export default function PriceCalculator() {
 					onClick={calcPrice}
 					icon={<UilCalculator sizePrice="20" />}
 				/>
-				<div className="price">Price: ${price}</div>
+				<div className="price">Price: ${price}
+				{isShown && <span className ="supplies"> + Supplies Cost.</span>}
+				</div>
+				<div className="warning">
+					<p className="warning-label">Warning!</p>
+					<p>Price is just an estimate.</p>
+				</div>
 			</div>
 		</div>
 	);

@@ -38,8 +38,7 @@ export default function Services() {
 						Prices are by the basket or $1.39lb. We will charge you for the
 						lowest price option. To give you an idea, if you have a large basket
 						with a few comforters in it, the price by the basket will at least
-						be $35. Therefore, we will charge by the pound because the basket
-						might not weight no more than 10 pounds which will save you money.
+						be $35. Therefore, we will adjust the price accordingly and charge not by the basket but by the weight of the basket plus the amount of detergent and softener used.
 						Use our price calculator to get a estimate of how much a basket of
 						clothes will cost you.
 					</div>
