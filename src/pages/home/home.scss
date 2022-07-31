@@ -23,7 +23,7 @@
 	font-family: "Brush Script MT", serif;
 	font-style: italic;
 	font-weight: 400;
-	font-size: 50px;
+	font-size: $title-font-size;
 	line-height: 97px;
 	text-align: center;
 }
@@ -33,7 +33,7 @@
 	li {
 		font-style: normal;
 		font-weight: 800;
-		font-size: 25px;
+		font-size: $subtitle-font-size;
 		line-height: 44px;
 	}
 }

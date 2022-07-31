@@ -10,7 +10,7 @@
 
 .calculator__title {
 	@include HoverActive();
-	font-size: 25px;
+	font-size: $subtitle-font-size;
 	font-weight: 700;
 	padding: 10px;
 	border-bottom: 3px dotted #f422223d;
@@ -23,12 +23,12 @@
 
 .basket-weight__label {
 	@include AutoLayoutRow(0, 10px);
-	font-size: 20px;
+	font-size: $medium-font-size;
 }
 
 .basket-weight__input {
 	width: 75px;
-	font-size: 20px;
+	font-size: $medium-font-size;
 	background-color: $black07-color;
 	color: $default-color;
 	border: 3px solid #f422223d;
@@ -41,12 +41,12 @@
 
 .basket-select__label {
 	@include AutoLayoutRow(0, 10px);
-	font-size: 20px;
+	font-size: $medium-font-size;
 }
 
 .basket-select__input {
 	width: 100px;
-	font-size: 20px;
+	font-size: $medium-font-size;
 	background-color: $black07-color;
 	color: $default-color;
 	border: 3px solid #f422223d;
@@ -68,19 +68,20 @@
 }
 
 .price {
-	font-size: 30px;
+	font-size: $large-font-size;
 	margin-top: 10px;
 }
 
 .warning {
 	text-align: center;
+	font-size: $small-font-size;
 }
 
 .warning-label {
 	color: #f42222;
-	font-size: 20px;
+	font-size: $medium-font-size;
 }
 
 .supplies {
-	font-size: 15px;
+	font-size: $default-font-size;
 }

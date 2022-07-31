@@ -1,123 +1,122 @@
 @import "../../assets/scss/styles.scss";
 
 .services__content {
-  @include AutoLayoutColumn(40px,40px);
-  align-items: center;
-  margin: 0 100px;
+	@include AutoLayoutColumn(40px, 40px);
+	align-items: center;
+	margin: 0 100px;
 }
 
 .services-content__header {
-  @include AutoLayoutRow(0, 50px)
+	@include AutoLayoutRow(0, 50px);
 }
 
 .services-header__img {
-  z-index: -1;
-  width: 300px;
-  height: 300px;
-  border: $image-border;
-  border-radius: 50%;
-  filter: $image-filter;
+	z-index: -1;
+	width: 300px;
+	height: 300px;
+	border: $image-border;
+	border-radius: 50%;
+	filter: $image-filter;
 }
 
 .services-header__info {
-  @include AutoLayoutColumn(0,30px);
-  align-items: center;
+	@include AutoLayoutColumn(0, 30px);
+	align-items: center;
 }
 
 .services-header__title {
-  @include AutoLayoutColumn(0,20px);
-  font-size: 35px;
-  font-weight: 600;
-  .head {
-    align-self: center;
-  }
-  .sub-head {
-    font-size: 25px;
-  }
+	@include AutoLayoutColumn(0, 20px);
+	font-size: $large-font-size;
+	font-weight: 600;
+	.head {
+		align-self: center;
+	}
+	.sub-head {
+		font-size: $subtitle-font-size;
+	}
 }
 
 .services-header__list {
-  @include AutoLayoutColumn(0, 22px);
-  font-size: 20px;
+	@include AutoLayoutColumn(0, 22px);
+	font-size: $medium-font-size;
 
-  li {
-    background: url(../../assets/img/caret-right.svg) no-repeat top left;
-    margin: 0;
-    padding: 4px 0 4px 40px;
-  }
+	li {
+		background: url(../../assets/img/caret-right.svg) no-repeat top left;
+		margin: 0;
+		padding: 4px 0 4px 40px;
+	}
 }
 
 .services__prices {
-  @include AutoLayoutColumn(0,20px);
-  align-items: center;
-  background-color: $black07-color;
-  border-radius: 20px;
-  width: 700px;
-  padding: 20px;
+	@include AutoLayoutColumn(0, 20px);
+	align-items: center;
+	background-color: $black07-color;
+	border-radius: 20px;
+	width: 700px;
+	padding: 20px;
 }
 
 .services-prices__title {
-  font-size: 30px;
-  font-weight: 700;
-  border-bottom: 2px solid #F42222;
-  padding: 0 0 5px;
-  margin: 10px 10px;
-  width: 650px;
+	font-size: $large-font-size;
+	font-weight: 700;
+	border-bottom: 2px solid #f42222;
+	padding: 0 0 5px;
+	margin: 10px 10px;
+	width: 650px;
 }
 
 .services-prices__description {
-  line-height: 30px;
-  font-size: 18px;
+	line-height: 30px;
+	font-size: $small-font-size;
 }
 
 .services-prices__breakdown {
-  @include AutoLayoutRow(0, 40px);
-  
+	@include AutoLayoutRow(0, 40px);
 }
 
 .breakdown__details {
-  @include AutoLayoutColumn(0, 10px);
-  align-items: center;
-  padding: 10px;
-  border: 3px dotted #f422223d;
-  border-radius: 5px;
-  align-self: start;
+	@include AutoLayoutColumn(0, 10px);
+	align-items: center;
+	padding: 10px;
+	border: 3px dotted #f422223d;
+	border-radius: 5px;
+	align-self: start;
 }
 
 .breakdown__title {
-  @include HoverActive();
-  font-size: 25px;
-  font-weight: 700;
-  padding: 10px;
-  border-bottom: 3px dotted #f422223d;
+	@include HoverActive();
+	font-size: $subtitle-font-size;
+	font-weight: 700;
+	padding: 10px;
+	border-bottom: 3px dotted #f422223d;
 }
 
 .breakdown__subtitle {
-  font-size: 20px;
+	font-size: $medium-font-size;
 }
 
 .breakdown__list {
-  @include AutoLayoutColumn(0,20px);
-  align-items: center;
-  margin-top: 20px;
+	@include AutoLayoutColumn(0, 20px);
+	align-items: center;
+	margin-top: 20px;
 }
 
 .small {
-  @include AutoLayoutColumn(0,5px);
-  align-items: center;
-  font-size: 18px;
+	@include AutoLayoutColumn(0, 5px);
+	align-items: center;
+	font-size: $small-font-size;
 }
 
 .medium {
-  @include AutoLayoutColumn(0, 5px);
-  align-items: center;
-  font-size: 20px;
-  font-weight: bold;
+	@include AutoLayoutColumn(0, 5px);
+	align-items: center;
+	font-size: $medium-font-size;
+	font-weight: bold;
 }
 
 .large {
-  @include AutoLayoutColumn(0, 5px);
-  align-items: center;
-  font-size: 22px;
-  font-weight: 800;
+	@include AutoLayoutColumn(0, 5px);
+	align-items: center;
+	font-size: $subtitle-font-size;
+	font-weight: 800;
 }
