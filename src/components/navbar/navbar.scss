@@ -15,7 +15,7 @@
 }
 
 .nav__title {
-	font-size: $medium-font-size;
+	font-size: size(medium);
 	color: $default-color;
 	&:hover {
 		@include HoverActive();
@@ -23,7 +23,7 @@
 }
 
 .nav__item {
-	font-size: $medium-font-size;
+	font-size: size(medium);
 	color: $default-color;
 	&:hover {
 		@include HoverActive();

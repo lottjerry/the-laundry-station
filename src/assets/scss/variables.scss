@@ -6,15 +6,21 @@ $border-color: rgba(0, 0, 0, 0.75);
 $box-shadow-color: rgba(0, 0, 0, 0.4);
 
 // Fonts
-$default-font: 'Inter', sans-serif;
+$default-font: "Inter", sans-serif;
 
 // Fonts Size
-$title-font-size: 3rem;
-$subtitle-font-size: 1.5rem;
-$default-font-size: 1rem;
-$large-font-size: 1.875rem;
-$medium-font-size: 1.25rem;
-$small-font-size: 1.125rem;
+$font-sizes: (
+	"title": 3rem,
+	"subtitle": 1.5rem,
+	"default": 1rem,
+	"large": 1.875rem,
+	"medium": 1.25rem,
+	"small": 1.125rem,
+);
+
+@function size($font-size) {
+	@return map-get($font-sizes, $font-size);
+}
 
 //
 $image-border: 5px solid $border-color;

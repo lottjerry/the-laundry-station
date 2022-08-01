@@ -14,7 +14,7 @@
 
 .about-content__list {
 	@include AutoLayoutColumn(0, 22px);
-	font-size: $medium-font-size;
+	font-size: size(medium);
 	li {
 		background: url(../../assets/img/check.svg) no-repeat top left;
 		margin: 0;

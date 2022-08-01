@@ -10,13 +10,13 @@
 .title {
 	font-style: normal;
 	font-weight: 900;
-	font-size: $title-font-size;
+	font-size: size(title);
 	line-height: 85px;
 }
 
 .subtitle {
 	font-style: normal;
 	font-weight: 600;
-	font-size: $subtitle-font-size;
+	font-size: size(subtitle);
 	line-height: 39px;
 }

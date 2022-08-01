@@ -26,19 +26,19 @@
 
 .services-header__title {
 	@include AutoLayoutColumn(0, 20px);
-	font-size: $large-font-size;
+	font-size: size(large);
 	font-weight: 600;
 	.head {
 		align-self: center;
 	}
 	.sub-head {
-		font-size: $subtitle-font-size;
+		font-size: size(subtitle);
 	}
 }
 
 .services-header__list {
 	@include AutoLayoutColumn(0, 22px);
-	font-size: $medium-font-size;
+	font-size: size(medium);
 
 	li {
 		background: url(../../assets/img/caret-right.svg) no-repeat top left;
@@ -57,7 +57,7 @@
 }
 
 .services-prices__title {
-	font-size: $large-font-size;
+	font-size: size(large);
 	font-weight: 700;
 	border-bottom: 2px solid #f42222;
 	padding: 0 0 5px;
@@ -67,7 +67,7 @@
 
 .services-prices__description {
 	line-height: 30px;
-	font-size: $small-font-size;
+	font-size: size(small);
 }
 
 .services-prices__breakdown {
@@ -85,14 +85,14 @@
 
 .breakdown__title {
 	@include HoverActive();
-	font-size: $subtitle-font-size;
+	font-size: size(subtitle);
 	font-weight: 700;
 	padding: 10px;
 	border-bottom: 3px dotted #f422223d;
 }
 
 .breakdown__subtitle {
-	font-size: $medium-font-size;
+	font-size: size(medium);
 }
 
 .breakdown__list {
@@ -104,19 +104,19 @@
 .small {
 	@include AutoLayoutColumn(0, 5px);
 	align-items: center;
-	font-size: $small-font-size;
+	font-size: size(small);
 }
 
 .medium {
 	@include AutoLayoutColumn(0, 5px);
 	align-items: center;
-	font-size: $medium-font-size;
+	font-size: size(medium);
 	font-weight: bold;
 }
 
 .large {
 	@include AutoLayoutColumn(0, 5px);
 	align-items: center;
-	font-size: $subtitle-font-size;
+	font-size: size(subtitle);
 	font-weight: 800;
 }
