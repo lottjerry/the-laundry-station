@@ -1,27 +1,26 @@
 @mixin AutoLayoutRow($padding, $gap) {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: $padding;
-  gap: $gap;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: $padding;
+	gap: $gap;
 }
 
-@mixin AutoLayoutColumn($padding,
-$gap) {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: $padding;
-  gap: $gap;
+@mixin AutoLayoutColumn($padding, $gap) {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: $padding;
+	gap: $gap;
 }
 
 @mixin HoverActive() {
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: #F42222;
-  stroke: #F42222;
-  stroke-width: 0.5px;
-  transition:all 1s ease-in-out;
-  cursor: pointer;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: #f42222;
+	stroke: #f42222;
+	stroke-width: 0.5px;
+	transition: all 1s ease-in-out;
+	cursor: pointer;
 }
