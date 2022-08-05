@@ -16,8 +16,10 @@
 	@include AutoLayoutColumn(0, 22px);
 	font-size: size(medium);
 	li {
-		background: url(../../assets/img/check.svg) no-repeat top left;
-		margin: 0;
-		padding: 4px 0 4px 40px;
+		@include AutoLayoutRow(0, 5px);
 	}
+}
+
+.icon {
+	@include HoverActive();
 }
