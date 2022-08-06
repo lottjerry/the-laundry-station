@@ -41,3 +41,48 @@
 .home__btns {
 	@include AutoLayoutRow(0, 25px);
 }
+
+/* Tablet */
+@media screen and (max-width: 960px) {
+	.home {
+	@include AutoLayoutRow(150px 0 0 0, 75px);
+	margin-bottom: 100px;
+}
+
+.home__logo {
+	width: 200px;
+	border-radius: 232.225px;
+}
+
+.home__content {
+	@include AutoLayoutColumn(0, 20px);
+}
+
+.home__info {
+	@include AutoLayoutColumn(0, 5px);
+	align-items: center;
+}
+
+.home-info__title {
+	font-family: "Brush Script MT", serif;
+	font-style: italic;
+	font-weight: 400;
+	font-size: tablet-size(title);
+	line-height: 97px;
+	text-align: center;
+}
+
+.home-info__list {
+	@include AutoLayoutColumn(0, 5px);
+	li {
+		font-style: normal;
+		font-weight: 800;
+		font-size: tablet-size(subtitle);
+		line-height: 44px;
+	}
+}
+
+.home__btns {
+	@include AutoLayoutRow(0, 25px);
+}
+}

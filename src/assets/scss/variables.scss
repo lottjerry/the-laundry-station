@@ -8,7 +8,7 @@ $box-shadow-color: rgba(0, 0, 0, 0.4);
 // Fonts
 $default-font: "Inter", sans-serif;
 
-// Fonts Size
+// Font Sizes
 $font-sizes: (
 	"title": 3rem,
 	"subtitle": 1.5rem,
@@ -20,6 +20,20 @@ $font-sizes: (
 
 @function size($font-size) {
 	@return map-get($font-sizes, $font-size);
+}
+
+// Tablet Font Sizes
+$tablet-font-sizes: (
+	"title": 2rem,
+	"subtitle": 1.25rem,
+	"default": 0.8rem,
+	"large": 1.500rem,
+	"medium": 1.125rem,
+	"small": 1.10rem,
+);
+
+@function tablet-size($tablet-font-size) {
+	@return map-get($tablet-font-sizes, $tablet-font-size);
 }
 
 //

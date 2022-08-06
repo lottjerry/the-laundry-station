@@ -23,3 +23,11 @@
 .icon {
 	@include HoverActive();
 }
+
+/* Tablet */
+@media screen and (max-width: 960px) {
+	.about__content {
+	@include AutoLayoutColumn(0, 50px);
+	align-items: center;
+}
+}
