@@ -4,7 +4,7 @@
 	@include AutoLayoutColumn(0, 5px);
 	align-items: center;
 	margin-bottom: 50px;
-	padding-top: 75px;
+	padding-top: 73.25px;
 }
 
 .title {
@@ -35,5 +35,11 @@
 
 	.subtitle {
 		font-size: mobile-size(subtitle);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.heading {
+		padding-top: 20.70px;
 	}
 }

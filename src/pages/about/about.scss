@@ -26,15 +26,20 @@
 
 /* Tablet */
 @media screen and (max-width: 960px) {
+	.soap__machine {
+		width: 150px;
+	}
+
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
 	.about__content {
 		@include AutoLayoutColumn(0, 25px);
 		align-items: center;
 		margin-bottom: 100px;
 	}
-}
 
-/* Mobile */
-@media screen and (max-width: 768px) {
 	.soap__machine {
 		z-index: -1;
 		width: 100px;

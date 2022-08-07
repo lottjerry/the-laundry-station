@@ -38,6 +38,7 @@
 
 	.contact__content {
 		@include AutoLayoutColumn(0, 25px);
+		flex-direction: column-reverse;
 		align-items: center;
 	}
 
