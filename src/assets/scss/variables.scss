@@ -22,18 +22,18 @@ $font-sizes: (
 	@return map-get($font-sizes, $font-size);
 }
 
-// Tablet Font Sizes
-$tablet-font-sizes: (
+// Mobile Font Sizes
+$mobile-font-sizes: (
 	"title": 2rem,
 	"subtitle": 1.25rem,
 	"default": 0.8rem,
-	"large": 1.500rem,
+	"large": 1.5rem,
 	"medium": 1.125rem,
-	"small": 1.10rem,
+	"small": 1.1rem,
 );
 
-@function tablet-size($tablet-font-size) {
-	@return map-get($tablet-font-sizes, $tablet-font-size);
+@function mobile-size($mobile-font-size) {
+	@return map-get($mobile-font-sizes, $mobile-font-size);
 }
 
 //

@@ -20,3 +20,20 @@
 	font-size: size(subtitle);
 	line-height: 39px;
 }
+
+@media screen and (max-width: 768px) {
+	.heading {
+		@include AutoLayoutColumn(0,0);
+		align-items: center;
+		margin-bottom: 50px;
+		padding-top: 25px;
+	}
+
+	.title {
+		font-size: mobile-size(title);
+	}
+
+	.subtitle {
+		font-size: mobile-size(subtitle);
+	}
+}

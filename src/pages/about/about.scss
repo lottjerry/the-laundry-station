@@ -27,7 +27,31 @@
 /* Tablet */
 @media screen and (max-width: 960px) {
 	.about__content {
-	@include AutoLayoutColumn(0, 50px);
-	align-items: center;
+		@include AutoLayoutColumn(0, 25px);
+		align-items: center;
+		margin-bottom: 100px;
+	}
 }
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+	.soap__machine {
+		z-index: -1;
+		width: 100px;
+		border-radius: 10px;
+		border: $image-border;
+		filter: $image-filter;
+	}
+
+	.about-content__list {
+		@include AutoLayoutColumn(0, 10px);
+		font-size: mobile-size(medium);
+		li {
+			@include AutoLayoutRow(0, 5px);
+		}
+	}
+
+	.icon {
+		@include HoverActive();
+	}
 }

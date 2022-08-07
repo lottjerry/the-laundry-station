@@ -13,43 +13,43 @@ export default function Services() {
 			/>
 			<div className="services__content">
 				<div className="services-content__header">
-					<img
-						src={FoldedClothes}
-						alt="Folded Clothes"
-						className="services-header__img"
-					/>
 					<div className="services-header__info">
+						<img
+							src={FoldedClothes}
+							alt="Folded Clothes"
+							className="services-header__img"
+						/>
 						<div className="services-header__title">
 							<p className="head">Drop-off</p>
 							<p className="sub-head">Available MON - FRI</p>
 						</div>
-						<ul className="services-header__list">
-							<li>
-								<div className="icon">
-									<UilCaretRight />
-								</div>
-								Just drop off your clothes and we will take care of the rest.
-							</li>
-							<li>
-								<div className="icon">
-									<UilCaretRight />
-								</div>
-								Supplies are included. Detergent, softener, etc.
-							</li>
-							<li>
-								<div className="icon">
-									<UilCaretRight />
-								</div>
-								The service includes washing, drying, and folding.
-							</li>
-							<li>
-								<div className="icon">
-									<UilCaretRight />
-								</div>
-								Satisfaction Guaranteed!
-							</li>
-						</ul>
 					</div>
+					<ul className="services-header__list">
+						<li>
+							<div className="icon">
+								<UilCaretRight />
+							</div>
+							Just drop off your clothes and we will take care of the rest.
+						</li>
+						<li>
+							<div className="icon">
+								<UilCaretRight />
+							</div>
+							Supplies are included. Detergent, softener, etc.
+						</li>
+						<li>
+							<div className="icon">
+								<UilCaretRight />
+							</div>
+							The service includes washing, drying, and folding.
+						</li>
+						<li>
+							<div className="icon">
+								<UilCaretRight />
+							</div>
+							Satisfaction Guaranteed!
+						</li>
+					</ul>
 				</div>
 				<div className="services__prices">
 					<div className="services-prices__title">Prices</div>
@@ -90,4 +90,3 @@ export default function Services() {
 		</section>
 	);
 }
-

@@ -3,9 +3,10 @@
 .calculator {
 	@include AutoLayoutColumn(0, 10px);
 	align-items: center;
-	padding: 10px;
 	border: 3px dotted #f422223d;
 	border-radius: 5px;
+	width: 300px;
+	height: 400px;
 }
 
 .calculator__title {
@@ -84,4 +85,43 @@
 
 .supplies {
 	font-size: size(default);
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+	.calculator__title {
+		font-size: mobile-size(subtitle);
+	}
+
+	.basket-weight__label {
+		font-size: mobile-size(medium);
+	}
+
+	.basket-weight__input {
+		font-size: mobile-size(medium);
+	}
+
+	.basket-select__label {
+		font-size: mobile-size(medium);
+	}
+
+	.basket-select__input {
+		font-size: mobile-size(medium);
+	}
+
+	.price {
+		font-size: mobile-size(large);
+	}
+
+	.warning {
+		font-size: mobile-(small);
+	}
+
+	.warning-label {
+		font-size: mobile-size(medium);
+	}
+
+	.supplies {
+		font-size: mobile-size(default);
+	}
 }
