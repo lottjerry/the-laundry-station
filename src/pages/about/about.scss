@@ -1,4 +1,7 @@
 @import "../../assets/scss/styles.scss";
+.about {
+	margin-bottom: 200px;
+}
 
 .about__content {
 	@include AutoLayoutRow(0, 50px);
