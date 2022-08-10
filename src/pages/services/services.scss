@@ -125,6 +125,10 @@
 
 /* Tablet */
 @media screen and (max-width: 960px) {
+	.services {
+		margin-bottom: 200px;
+	}
+
 	.services-header__list {
 		font-size: mobile-size(small);
 	}

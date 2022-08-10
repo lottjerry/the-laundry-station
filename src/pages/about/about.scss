@@ -26,10 +26,12 @@
 
 /* Tablet */
 @media screen and (max-width: 960px) {
+	.about {
+		margin-bottom: 200px;
+	}
 	.soap__machine {
 		width: 150px;
 	}
-
 }
 
 /* Mobile */

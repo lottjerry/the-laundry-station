@@ -46,7 +46,8 @@
 @media screen and (max-width: 960px) {
 	.home {
 		@include AutoLayoutRow(150px 0 0 0, 75px);
-		margin-bottom: 100px;
+		margin-bottom: 200px;
+		margin: 0, 25px;
 	}
 
 	.home__logo {
