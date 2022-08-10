@@ -24,12 +24,12 @@ $font-sizes: (
 
 // Mobile Font Sizes
 $mobile-font-sizes: (
-	"title": 1.8rem,
-	"subtitle": 1.15rem,
-	"default": 0.6rem,
-	"large": 1.25rem,
-	"medium": 1.100rem,
-	"small": 1rem,
+	"title": 1.5rem,
+	"subtitle": 1.05rem,
+	"default": 0.8rem,
+	"large": 1.10rem,
+	"medium": 1rem,
+	"small": .75rem,
 );
 
 @function mobile-size($mobile-font-size) {
