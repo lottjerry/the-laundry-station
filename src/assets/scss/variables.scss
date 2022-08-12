@@ -1,3 +1,7 @@
+$header-height: 3rem;
+$fw-medium: 500;
+$fw-bold: 600;
+
 /* ========== Font and typography ========== */
 $default-font: "Inter", sans-serif;
 
@@ -33,9 +37,9 @@ $margin-bottoms: (
 
 /* ========== z index ========== */
 $z-indexes: (
-	"first": 1000,
-	"middle": 100,
-	"last": 10,
+	"first": 1000, //modal
+	"middle": 100, //fixed
+	"last": 10, //tooltip
 );
 
 @function z($z-index) {
