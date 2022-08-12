@@ -19,7 +19,7 @@ export default function Navbar() {
 
 	return (
 		<nav className="nav" id="nav">
-			<div onClick={scrollToTop} className="nav__title">
+			<div onClick={scrollToTop} className="nav__logo">
 				The Laundry Station
 			</div>
 			<div className="menu__icon" onClick={handleClick}>
