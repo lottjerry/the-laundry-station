@@ -1,7 +1,4 @@
 @import "../../assets/scss/styles.scss";
-.about {
-	margin-bottom: 200px;
-}
 
 .about__content {
 	@include AutoLayoutRow(0, 50px);
@@ -29,12 +26,10 @@
 
 /* Tablet */
 @media screen and (max-width: 960px) {
-	.about {
-		margin-bottom: 200px;
-	}
 	.soap__machine {
 		width: 150px;
 	}
+
 }
 
 /* Mobile */

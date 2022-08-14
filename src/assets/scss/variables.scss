@@ -1,66 +1,3 @@
-$header-height: 3rem;
-$fw-medium: 500;
-$fw-bold: 600;
-
-/* ========== Font and typography ========== */
-$default-font: "Inter", sans-serif;
-
-$font-sizes: (
-	"big": 2rem,
-	"h1": 1.5rem,
-	"h2": 1.25rem,
-	"h3": 1.125rem,
-	"normal": 0.938rem,
-	"small": 0.813rem,
-	"smaller": 0.75rem,
-);
-
-@function fs($font-size) {
-	@return map-get($font-sizes, $font-size);
-}
-
-/* ========== Margins Bottom ========== */
-$margin-bottoms: (
-	"0-25": 0.25rem,
-	"0-5": 0.5rem,
-	"0-75": 0.75rem,
-	"1": 1rem,
-	"1-5": 1.5rem,
-	"2": 2rem,
-	"2-5": 2.5rem,
-	"3": 3rem,
-);
-
-@function mb($margin-bottom) {
-	@return map-get($margin-bottoms, $margin-bottom);
-}
-
-/* ========== z index ========== */
-$z-indexes: (
-	"first": 1000, //modal
-	"middle": 100, //fixed
-	"last": 10, //tooltip
-);
-
-@function z($z-index) {
-	@return map-get($z-indexes, $z-index);
-}
-
-/* ========== Colors ========== */
-$colors: (
-	"text": #fff,
-	"bg": #000,
-	"bg-light": rgba(0, 0, 0, 0.7),
-	"bg-lighter": rgba(0, 0, 0, 0.5),
-	"ol": #f42222,
-	"ol-light": rgba(244, 34, 34, 0.6),
-	"ol-lighter": rgba(244, 34, 34, 0.23921568),
-);
-
-@function colors($color) {
-	@return map-get($colors, $color);
-}
-
 // Colors
 $default-color: #fff;
 $black05-color: rgba(0, 0, 0, 0.5);
@@ -69,17 +6,30 @@ $border-color: rgba(0, 0, 0, 0.75);
 $box-shadow-color: rgba(0, 0, 0, 0.4);
 
 // Fonts
+$default-font: "Inter", sans-serif;
 
 // Font Sizes
+$font-sizes: (
+	"title": 3rem,
+	"subtitle": 1.5rem,
+	"default": 1rem,
+	"large": 1.875rem,
+	"medium": 1.25rem,
+	"small": 1.125rem,
+);
+
+@function size($font-size) {
+	@return map-get($font-sizes, $font-size);
+}
 
 // Mobile Font Sizes
 $mobile-font-sizes: (
-	"title": 1.5rem,
-	"subtitle": 1.05rem,
+	"title": 2rem,
+	"subtitle": 1.25rem,
 	"default": 0.8rem,
-	"large": 1.1rem,
-	"medium": 1rem,
-	"small": 0.75rem,
+	"large": 1.5rem,
+	"medium": 1.125rem,
+	"small": 1.1rem,
 );
 
 @function mobile-size($mobile-font-size) {

@@ -1,15 +1,9 @@
 @import "../../assets/scss/styles.scss";
 
 #back-to-top {
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	width: 40px;
-	border: 1px solid #f4222299;
-}
-
-@media screen and (max-width: 768px) {
-	#back-to-top {
-    // display: none;
-  }
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  border: 1px solid #f4222299;
 }
