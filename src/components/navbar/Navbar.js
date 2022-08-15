@@ -4,13 +4,10 @@ import { UilApps, UilTimes } from "@iconscout/react-unicons";
 import { useState } from "react";
 
 export default function Navbar() {
-	const [click, setClick] = useState(false);
-
-	const handleClick = () => setClick(!click);
-	const closeMobileMenu = () => setClick(false);
+	const [menuOpen, setMenuOpen] = useState(false);
 
 	const scrollToTop = () => {
-		setClick(false);
+		setMenuOpen(false);
 		window.scrollTo({
 			top: 0,
 			behavior: "smooth",
@@ -18,45 +15,56 @@ export default function Navbar() {
 	};
 
 	return (
-		<nav className="nav" id="nav">
-			<div onClick={scrollToTop} className="nav__title">
-				The Laundry Station
-			</div>
-			<div className="menu__icon" onClick={handleClick}>
-				{click ? <UilTimes /> : <UilApps />}
-			</div>
-			<ScrollspyNav
-				scrollDuration="500"
-				scrollTargetIds={["home", "about", "services", "contact"]}
-				activeNavClass="active-item"
-			>
-				<ul className={click ? "nav__menu active" : "nav__menu"}>
-					<li className="nav__item">
-						<a
-							href="#home"
-							className="nav__link active-item"
-							onClick={closeMobileMenu}
+		<header className="header">
+			<nav className="nav container" id="nav">
+				<div onClick={scrollToTop} className="nav__title">
+					The Laundry Station
+				</div>
+				<div className={"nav__menu " + (menuOpen && "show__menu")}>
+					<ScrollspyNav
+						scrollDuration="500"
+						scrollTargetIds={["home", "about", "services", "contact"]}
+						activeNavClass="active-item"
+					>
+						<ul
+							className="nav__list grid align"
+							onClick={() => setMenuOpen(false)}
 						>
-							Home
-						</a>
-					</li>
-					<li className="nav__item">
-						<a href="#about" className="nav__link" onClick={closeMobileMenu}>
-							About
-						</a>
-					</li>
-					<li className="nav__item">
-						<a href="#services" className="nav__link" onClick={closeMobileMenu}>
-							Services
-						</a>
-					</li>
-					<li className="nav__item">
-						<a href="#contact" className="nav__link" onClick={closeMobileMenu}>
-							Contact Us
-						</a>
-					</li>
-				</ul>
-			</ScrollspyNav>
-		</nav>
+							<li className="nav__item">
+								<a href="#home" className="nav__link active-item">
+									Home
+								</a>
+							</li>
+							<li className="nav__item">
+								<a href="#about" className="nav__link">
+									About
+								</a>
+							</li>
+							<li className="nav__item">
+								<a href="#services" className="nav__link">
+									Services
+								</a>
+							</li>
+							<li className="nav__item">
+								<a href="#contact" className="nav__link">
+									Contact Us
+								</a>
+							</li>
+						</ul>
+						<UilTimes
+							className="nav__close"
+							onClick={() => setMenuOpen(false)}
+						/>
+					</ScrollspyNav>
+				</div>
+				<div className="nav__btns">
+					{!menuOpen && (
+						<div className="nav__toggle" onClick={() => setMenuOpen(!menuOpen)}>
+							<UilApps />
+						</div>
+					)}
+				</div>
+			</nav>
+		</header>
 	);
 }
