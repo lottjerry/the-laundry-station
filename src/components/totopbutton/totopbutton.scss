@@ -1,9 +1,24 @@
 @import "../../assets/scss/styles.scss";
 
-#back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 40px;
-  border: 1px solid #f4222299;
+.scroll-btn {
+	position: fixed;
+	right: 1rem;
+	bottom: -20%;
+	width: 40px;
+  height: 40px;
+	color: #fff;
+	background: $black07-color;
+	box-shadow: 8px 8px 3px $box-shadow-color;
+	border-radius: 15px;
+	border: 1px solid #f4222299;
+  z-index: 0;
+	transition: 0.4s;
+	&:hover {
+		@include HoverActive();
+	}
+}
+
+/* Show scroll */
+.show-scroll {
+	bottom: 5rem;
 }

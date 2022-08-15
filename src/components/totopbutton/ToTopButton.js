@@ -21,7 +21,10 @@ export default function ToTopButton() {
 	return (
 		<>
 			{showButton && (
-				<button id="back-to-top" className="button" onClick={scrollToTop}>
+				<button
+					className={showButton ? "scroll-btn show-scroll" : "scroll-btn"}
+					onClick={scrollToTop}
+				>
 					<div className="icon">
 						<UilArrowUp size="30" />
 					</div>

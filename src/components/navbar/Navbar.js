@@ -51,7 +51,7 @@ export default function Navbar() {
 								</a>
 							</li>
 						</ul>
-						<UilTimes
+						<UilTimes size="30"
 							className="nav__close"
 							onClick={() => setMenuOpen(false)}
 						/>
