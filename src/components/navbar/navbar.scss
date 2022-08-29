@@ -89,3 +89,36 @@
 		@include HoverActive();
 	}
 }
+
+@media screen and (min-width: 768px) {
+	.header {
+		top: 0;
+		height: 3rem;
+
+	}
+
+	.nav__close {
+		display: none;
+	}
+
+	.nav__toggle {
+		display: none;
+	}
+
+	.nav {
+		display: flex;
+		justify-content: center;
+		.nav__list {
+			display: flex;
+			column-gap: 2rem;
+		}
+	}
+
+	.nav__title {
+		font-size: 1.2rem;
+	}
+
+	.nav__menu {
+		margin-left: auto;
+	}
+}
