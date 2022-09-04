@@ -67,7 +67,7 @@
 		font-family: "Brush Script MT", serif;
 		font-style: italic;
 		font-weight: 400;
-		font-size: mobile-size(title);
+		font-size: size(title);
 		line-height: 97px;
 		text-align: center;
 	}
@@ -77,7 +77,7 @@
 		li {
 			font-style: normal;
 			font-weight: 800;
-			font-size: mobile-size(subtitle);
+			font-size: size(subtitle);
 			line-height: 44px;
 		}
 	}
@@ -88,7 +88,7 @@
 }
 
 /* Mobile */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.home {
 		@include AutoLayoutColumn(50px 0 0 0, 10px);
 		align-items: center;

@@ -14,7 +14,7 @@ a {
 }
 
 .container {
-	max-width: 768px;
+	max-width: 767px;
 	margin-left: 1.5rem;
 	margin-right: 1.5rem;
 }
@@ -24,6 +24,7 @@ a {
 	gap: 1.5rem;
 }
 
-html, body {
+html,
+body {
 	overflow-x: hidden;
 }

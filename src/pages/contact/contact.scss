@@ -64,7 +64,7 @@
 }
 
 /* Mobile */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.contact {
 		margin-bottom: 150px;
 		margin-top: 25px;
@@ -78,7 +78,7 @@
 
 	.contact-content__group {
 		@include AutoLayoutColumn(0, 20px);
-		align-items: center
+		align-items: center;
 	}
 
 	.contact__buttons {

@@ -139,7 +139,7 @@
 	}
 }
 /* Mobile */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.services__content {
 		@include AutoLayoutColumn(0, 10px);
 		align-items: center;
