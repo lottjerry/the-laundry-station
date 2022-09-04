@@ -102,6 +102,7 @@
 
 	.home__content {
 		@include AutoLayoutColumn(0, 20px);
+		align-items: center;
 	}
 
 	.home__info {
@@ -123,7 +124,7 @@
 		li {
 			font-style: normal;
 			font-weight: 800;
-			font-size: mobile-size(subtitle);
+			font-size: mobile-size(small);
 			line-height: 44px;
 		}
 	}

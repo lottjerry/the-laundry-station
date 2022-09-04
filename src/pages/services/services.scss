@@ -181,8 +181,8 @@
 
 	.services-header__list {
 		@include AutoLayoutColumn(0, 18px);
-		width: 450px;
-		font-size: mobile-size(small);
+		width: 340px;
+		font-size: mobile-size(default);
 
 		li {
 			@include AutoLayoutRow(0, 5px);
@@ -197,7 +197,7 @@
 		align-items: center;
 		background-color: $black07-color;
 		border-radius: 20px;
-		width: 450px;
+		width: 340px;
 		padding: 20px;
 	}
 
@@ -207,12 +207,12 @@
 		border-bottom: 2px solid #f42222;
 		padding: 0 0 5px;
 		margin: 10px 10px;
-		width: 400px;
+		width: 290px;
 	}
 
 	.services-prices__description {
 		line-height: 30px;
-		font-size: mobile-size(small);
+		font-size: mobile-size(subtitle);
 	}
 
 	.services-prices__breakdown {
@@ -231,14 +231,15 @@
 
 	.breakdown__title {
 		@include HoverActive();
-		font-size: mobile-size(subtitle);
+		font-size: mobile-size(large);
 		font-weight: 700;
 		padding: 10px;
 		border-bottom: 3px dotted #f422223d;
 	}
 
 	.breakdown__subtitle {
-		font-size: size(medium);
+		font-size: mobile-size(small);
+		padding-bottom: 2rem;
 	}
 
 	.breakdown__list {
@@ -263,7 +264,7 @@
 	.large {
 		@include AutoLayoutColumn(0, 5px);
 		align-items: center;
-		font-size: mobile-size(subtitle);
+		font-size: mobile-size(large);
 		font-weight: 800;
 	}
 }

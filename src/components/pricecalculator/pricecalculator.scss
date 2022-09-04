@@ -90,23 +90,23 @@
 /* Mobile */
 @media screen and (max-width: 768px) {
 	.calculator__title {
-		font-size: mobile-size(subtitle);
+		font-size: mobile-size(large);
 	}
 
 	.basket-weight__label {
-		font-size: mobile-size(medium);
+		font-size: mobile-size(small);
 	}
 
 	.basket-weight__input {
-		font-size: mobile-size(medium);
+		font-size: mobile-size(small);
 	}
 
 	.basket-select__label {
-		font-size: mobile-size(medium);
+		font-size: mobile-size(small);
 	}
 
 	.basket-select__input {
-		font-size: mobile-size(medium);
+		font-size: mobile-size(small);
 	}
 
 	.price {
@@ -114,11 +114,11 @@
 	}
 
 	.warning {
-		font-size: mobile-(small);
+		font-size: mobile-(default);
 	}
 
 	.warning-label {
-		font-size: mobile-size(medium);
+		font-size: mobile-size(small);
 	}
 
 	.supplies {

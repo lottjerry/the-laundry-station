@@ -25,8 +25,8 @@ export default function ToTopButton() {
 					className={showButton ? "scroll-btn show-scroll" : "scroll-btn"}
 					onClick={scrollToTop}
 				>
-					<div className="icon">
-						<UilArrowUp size="30" />
+					<div>
+						<UilArrowUp className="icon" size="30" />
 					</div>
 				</button>
 			)}

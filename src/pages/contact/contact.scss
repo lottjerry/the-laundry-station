@@ -77,16 +77,17 @@
 	}
 
 	.contact-content__group {
-		@include AutoLayoutRow(0, 20px);
-		align-items: center;
+		@include AutoLayoutColumn(0, 20px);
+		align-items: center
 	}
 
 	.contact__buttons {
 		@include AutoLayoutColumn(0, 50px);
+		align-items: center;
 	}
 
 	.content-group__text {
-		font-size: mobile-size(small);
+		font-size: mobile-size(default);
 		font-weight: bold;
 	}
 

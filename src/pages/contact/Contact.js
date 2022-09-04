@@ -3,6 +3,7 @@ import { UilPhone, UilAt, UilMapMarker } from "@iconscout/react-unicons";
 import Button from "../../components/button/Button";
 import "./contact.scss";
 import map from "../../assets/img/map.png";
+
 export default function Contact() {
 	const link =
 		"https://www.google.com/maps/place/The+Laundry+Station/@31.6015281,-89.2006045,18.06z/data=!4m5!3m4!1s0x889ccd5ac99e3ea7:0xb37c37ebd769f9c2!8m2!3d31.6013829!4d-89.1993865";
