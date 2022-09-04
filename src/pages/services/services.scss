@@ -182,7 +182,7 @@
 	.services-header__list {
 		@include AutoLayoutColumn(0, 18px);
 		width: 340px;
-		font-size: mobile-size(default);
+		font-size: mobile-size(small);
 
 		li {
 			@include AutoLayoutRow(0, 5px);

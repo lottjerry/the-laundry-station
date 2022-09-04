@@ -50,7 +50,8 @@
 	.about-content__list {
 		@include AutoLayoutColumn(0, 10px);
 
-		font-size: mobile-size(default);
+		font-size: mobile-size(small);
+		padding: 0 20px;
 		li {
 			@include AutoLayoutRow(0, 5px);
 		}
