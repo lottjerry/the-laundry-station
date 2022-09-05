@@ -59,7 +59,7 @@ export default function Services() {
 						with a few comforters in it, the price by the basket will at least
 						be $35. Therefore, we will adjust the price accordingly and charge
 						not by the basket but by the weight of the basket plus the amount of
-						detergent and softener used. Use our price calculator to get a
+						detergent and softener used. Use our price calculator to get an
 						estimate of how much a basket of clothes will cost you.
 					</div>
 					<div className="services-prices__breakdown">

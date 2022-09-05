@@ -11,7 +11,7 @@ export default function Footer() {
 					className="footer__logo"
 				/>
 				<div className="copyright">
-					<p>&#169; The Laundry Station All rights reserved.</p>
+					<p>&#169; The Laundry Station. All rights reserved.</p>
 					<p>
 						Website Designed and Developed by{" "}
 						<a

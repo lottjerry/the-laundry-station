@@ -21,7 +21,7 @@ export default function Home() {
 					<ul className="home-info__list">
 						<li>Locally Owned and Operated</li>
 						<li>Newer Model Machines</li>
-						<li>Onsite Services and More</li>
+						<li>On-site Services and More</li>
 					</ul>
 				</div>
 				<div className="home__btns">

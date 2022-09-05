@@ -35,7 +35,7 @@ export default function About() {
 						<div className="icon">
 							<UilCheck />
 						</div>
-						20 Wahsers and 18 Dryers (2 Industrial Size Dryers)
+						20 Washers and 18 Dryers (2 Industrial Size Dryers)
 					</li>
 					<li>
 						<div className="icon">
