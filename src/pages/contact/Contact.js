@@ -29,12 +29,12 @@ export default function Contact() {
 					<Group
 						button={
 							<Button
-								href="tel:601-498-5136"
+								href="tel:601-800-4173"
 								text="Call Us"
 								icon={<UilPhone size="20" />}
 							/>
 						}
-						text="+601.498.5136"
+						text="+601.800.4173"
 					/>
 					<Group
 						button={
